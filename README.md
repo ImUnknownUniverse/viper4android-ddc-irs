@@ -1,4 +1,14 @@
-# 1. How to create VDC for Viper4Android or JamesDSP -
+# 1. Create VDC for Viper4Android or JamesDSP -
+
+You can create your own VDC and IRS files for viper4android or JamesDSP easily using below steps but before doing that simply search your headphone model number on [AutoEq.app site](https://autoeq.app/) or use [DDCToolBox Android app](https://github.com/ThePBone/DDCToolbox-Android/) to easily download your VDC file.
+
+Also, you can download profiles (like VDC) for various apps like Wavelet from [AutoEq.app site](https://autoeq.app/) so dont forget to check that.
+
+>Note -
+>
+>DDCToolbox Android is made for old android devices so you need to download it from [apkpure site](https://m.apkpure.com/ddc-toolbox/cf.thebone.ddctoolbox/download/2.0.0) and manually installl it.
+>
+>Same can be download from [here (direct download).](/files/DDC_Toolbox_2.2.0_Apkpure.apk)
 
 ## Steps -
 
@@ -19,7 +29,7 @@ Available for majority of the operating systems like Windows, Mac and Linux.
 
 Android version comes with basic settings only and may not work on newer android versions.
 
-[Download DDCToolBox Android](https://github.com/ThePBone/DDCToolbox-Android/)
+[Download DDCToolBox Android (GitHub)](https://github.com/ThePBone/DDCToolbox-Android/)
 
 ### 2. Create VDC -
 
@@ -34,9 +44,23 @@ Now we need to copy the `.vdc` file inside `Android/data/com.pittvandewitt.viper
 
 Source - Special thanks tho the user [u/Basileus_ITA](https://www.reddit.com/user/Basileus_ITA/) and his [reddit post.](https://www.reddit.com/r/oratory1990/comments/o6b8p4/the_fools_guide_to_applying_eq_on_rooted_android/)
 
+### 2.1 Using android app -
+
+First download DDCToolBox App from the post or apkpure site and install it, then simply open application and search for your headphone model number.
+
+>Note -
+>
+>DDC toolbox is for older devices on Play Store, thus may not be available for your phone.
+>
+>Download from [Apkpure site.](https://m.apkpure.com/ddc-toolbox/cf.thebone.ddctoolbox/download/2.0.0)
+>
+>If you choose download split apk `.xapk` then install it using this [SAI Installer (Play Store)](https://play.google.com/store/apps/details?id=io.apkmody.sai)
+>
+>Same can be download from [here (direct download).](/files/DDC_Toolbox_2.2.0_Apkpure.apk)
+
 ---
 
-# 2. How to create IRS file for your Viper4Android or JamesDSP -
+## 2. How to create IRS file for your Viper4Android or JamesDSP -
 
 ## 1. Create headphone specific IRS file automatically -
 
@@ -44,7 +68,7 @@ Source - Special thanks tho the user [u/Basileus_ITA](https://www.reddit.com/use
 2. Search `Search your headphone model number`, example - `Sony WH-1000XM`
 3. Then select app `Viper4Android` from dropdown list.
 4. Click on `download` to download.
-5. Rename downloaded `wav` file to `irs`
+5. Rename downloaded `wav` file to `irs` or keep it as it is.
 6. Copy your VDC -
 Now we need to copy the `.irs` file inside `Android/data/com.pittvandewitt.viperfx/files/Kernel/`, if there is no folder then create it.
 
@@ -87,7 +111,7 @@ Open Peace Equalizer Apo Extension from desktop, Play music and tune it to your 
 # For 44Hz
 benchmark.exe -i dirac24_44_stereo.wav -o my_irs_44k.wav
 
-# For 48Hz
+# For 48Hz (Recommended on modern devices)
 benchmark.exe -i dirac24_48_stereo.wav -o my_irs_48k.wav
 ```
 
@@ -112,3 +136,12 @@ Also IRS file is nothing but  a `WAV` file which is renamed to `IRS` if you play
 1. [YouTube Video](https://www.youtube.com/watch?v=YApT9_zY4vY)
 
 2. [XDA Thread Link](https://xdaforums.com/t/guide-modifying-viper4android-convolver-impulse-responses-irs.3717683/)
+
+---
+
+### Credits -
+
+- [AutoEq team](https://autoeq.app/)
+- Various reddit users
+- pittvandewitt
+- The Best (telegram user)
